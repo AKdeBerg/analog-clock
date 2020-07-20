@@ -1,0 +1,90 @@
+html {
+    /* The image is from unsplash by David van Dijk */
+    /* set an image such that it doesn't repeat stay center */
+    background: url(./img/wall.jpg) no-repeat center center fixed;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+
+    /*setting the root font-size to calculate rem based off of this*/
+    font-size: 10px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+
+    /*I want elements of body to be displayed as flexbox*/
+    display: flex;
+    flex: 1;
+
+    /*center vertically*/
+    align-items: center;
+
+    /*center horizontally*/
+    justify-content: center;
+    margin-left: -200px;
+
+    /*100% of the viewport height*/
+    min-height: 100vh;
+
+
+    font-size: 2rem;
+}
+
+.clock {
+    /*give it a shape; from square to round*/
+    height: 30rem;
+    width: 30rem;
+    border: 10px solid rgba(209, 231, 224, 0.904);
+    border-radius: 50%;
+
+    /*keep the hands away from border*/
+    padding: 4px;
+
+    /*set the shadow inside*/
+    box-shadow: inset 0 0 10px black,
+        inset 0 0 10px rgb(235, 233, 233);
+
+    position: relative;
+}
+
+.clock-face {
+    height: 50%;
+    width: 50%;
+    transform: translateY(-3px);
+
+    position: relative;
+}
+
+.hand {
+    background-color: rgba(15, 80, 69, 0.712);
+    height: 3px;
+    width: 75%;
+
+    /*relating to the position*/
+    position: absolute;
+    top: 150px;
+    left: 30px;
+
+    /*to move*/
+    transform: rotate(90deg);
+    /*keep everything attached to the right point or middle point*/
+    transform-origin: 100%;
+    /*transition & speeding the effect*/
+    transition: all 0.06s;
+    transition-timing-function: cubic-bezier(0.07, 3.65, 0.76, 0.4);
+}
+
+audio {
+    /*positioning the audio player*/
+    align-self: flex-end;
+    margin-left: -300px;
+}
+
+/*after 444 degree the second hand behaves weirdly; to stop that-*/
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
