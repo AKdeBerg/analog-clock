@@ -1,4 +1,4 @@
-# <h1 align="center"> 👋Welcome to the Minimally Designed analog-clock🎵 👋 </h1>
+# <h1 align="center"> 👋Welcome to the Minimally Designed analog-clock🕘👋 </h1>
 Wanna go back to good old analog era or you might be tired of changing your clock's batteries😁 
 whatever the case is let's try this clock! (proud of my marketing skill 😎)
 
