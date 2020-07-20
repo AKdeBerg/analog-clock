@@ -57,6 +57,7 @@ body {
 }
 
 .hand {
+    /*give the hands some shape*/
     background-color: rgba(15, 80, 69, 0.712);
     height: 3px;
     width: 75%;
@@ -81,7 +82,7 @@ audio {
     margin-left: -300px;
 }
 
-/*after 444 degree the second hand behaves weirdly; to stop that-*/
+/*after 444 degree the second hand behaves weirdly; to stop that- (more on that in script.js file)*/
 .notransition {
     -webkit-transition: none !important;
     -moz-transition: none !important;
