@@ -20,6 +20,9 @@ This is how the app looks like-
 
 <img width="700" align="center" src="./img/challenge.jpg"/>
 
+## Blog
+Plz read my article I wronte on it: https://dev.to/akdeberg/minimalist-wall-clock-46ig
+
 ## Tech I Used
 This app is purely made with vanilla JavaScript & raw HTML/CSS. It is to demonstrate, ff you can be creative you can make something amazing out of those core technologies.
 
